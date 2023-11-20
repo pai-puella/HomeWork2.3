@@ -1,17 +1,20 @@
-public class Truck {
+public class Truck extends Car {
+    private int trailerCount;
 
-    public String modelName;
-    public int wheelsCount;
-
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
-    }
-
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
+    public Truck(String modelName, int wheelsCount, int trailerCount) {
+        super(modelName, wheelsCount);
+        this.trailerCount = trailerCount;
     }
 
     public void checkTrailer() {
         System.out.println("Проверяем прицеп");
     }
+
+    //public int getTrailerCount() {
+    //    return trailerCount;
+    //}
+
+    //public void setTrailerCount(int trailerCount) {
+    //    this.trailerCount = trailerCount;
+    //}
 }
