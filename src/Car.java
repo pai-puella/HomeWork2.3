@@ -1,7 +1,12 @@
 public class Car {
 
-    public String modelName;
-    public int wheelsCount;
+    private String modelName;
+    private int wheelsCount;
+
+    public Car(String modelName, int wheelsCount) {
+        this.modelName = modelName;
+        this.wheelsCount = wheelsCount;
+    }
 
     public void updateTyre() {
         System.out.println("Меняем покрышку");
