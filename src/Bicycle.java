@@ -7,7 +7,7 @@ public class Bicycle extends Vehicle {
         super(modelName, wheelsCount);
     }
 
-    public void updateTyre() {
+    public void changeTyre() {
         System.out.println("Меняем покрышку");
     }
 
@@ -17,5 +17,13 @@ public class Bicycle extends Vehicle {
 
     public int getWheelsCount() {
         return wheelsCount;
+    }
+
+    @Override
+    public void check() {
+        System.out.println("Обслуживаем велосипед " + getModelName());
+        for (int i = 0; i < getWheelsCount(); i++) {
+            changeTyre();
+        }
     }
 }

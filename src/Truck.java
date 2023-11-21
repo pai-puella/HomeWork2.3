@@ -9,12 +9,4 @@ public class Truck extends Car {
     public void checkTrailer() {
         System.out.println("Проверяем прицеп");
     }
-
-    //public int getTrailerCount() {
-    //    return trailerCount;
-    //}
-
-    //public void setTrailerCount(int trailerCount) {
-    //    this.trailerCount = trailerCount;
-    //}
 }

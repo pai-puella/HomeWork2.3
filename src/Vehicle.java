@@ -1,4 +1,15 @@
-public class Vehicle {
+// Интерфейс для сервисных операций транспортных средств
+interface IVehicleService {
+    void check();
+}
+
+interface VehicleImpl extends IVehicleService {
+    void updateTyre();
+    String getModelName();
+    int getWheelsCount();
+}
+
+public abstract class Vehicle implements VehicleImpl{
     private String modelName;
     private int wheelsCount;
 
